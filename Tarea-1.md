@@ -17,6 +17,13 @@ opcion 1
     Se requiere crear una una pagina web donde se almasenen datos de clientes, como son nombre, Empresa, telefono direccion, ubicacion, numero de cotizaciones relacionadas al cliente, control de pagos y pedidos, integrando un calendario donde se registrara los tiempos de avance del proyecto del cliente ( es decir tiempos de ejecucion de gabainete, exploracion, ejeccucion, procesado de informacion y redaccion de informde), asimismo el operador que realice el trabajo de levantamiento podra respaldar en tiempo real los datos capturados en campo, ya sena capturas de pantalla de libretas de campo, archivos excel, txt y se pueda consultar en todo momento por los usuarios, estosarchivos solo podran ser vistos y consultados internamente, se debera guardar un recor de los trabajos los archivos las ubicaciones de los trabajos y evdencia fotografica del mismo en esta base de datos. al igual que los valores de medicion de la declinacion magnetica del sitio en caso  de requerir levantamiento magnetico.
 
 opcion dos 
+
+Se busca conocer las zonas de mayor concentracion de contamietes en el area urbanja de la CDMX apartir de datos de la Red Automatica de Monitoreo Atmosferico (RAMA), asi como su distribucion fisica apartir de la ubicacion de las estaciones de monitoreo, asi como ver su evolucion a lo largo de los ultimos 8 años, en relacion al crecimiento demografico de la ciudad de mexico apartir de datos del INEGI, se cuenta con los siguientes datos del  monitoreo Atmosferico:
+
+"La Red Automática de Monitoreo Atmosférico (RAMA) utiliza equipos continuos para la medición de dióxido de azufre, monóxido de carbono, dióxido de nitrógeno, ozono, PM10 y PM2.5. Está integrada por 34 estaciones de monitoreo y cuenta con un laboratorio para el mantenimiento y calibración de los equipos de monitoreo." 
+
+se buscara generar relaciones entre los distintos contaminantes, el crecimiento poblacional y la distribucion de la poblacion en la CDMX.
+
     Se empleara MySQL como DBMS para el trabajo de la materia.
 
 4.-Investigar diferentes SGBD (DBMS), elegir alguno y describirlo. Citar adecuadamente. Plagio invalida tarea.
