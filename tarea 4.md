@@ -1,4 +1,4 @@
-Emiciones_CO2 (_id_, _id-Country_, _id-year_)
+**Emiciones_CO2** (_id_, _id-Country_, _id-year_)
  
 Country (_id_, _id-Year_, Area, %_of_World, Density_km2)
 

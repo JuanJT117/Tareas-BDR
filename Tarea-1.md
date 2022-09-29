@@ -35,13 +35,49 @@ opcion dos
     
     DE igual forma es posible clasificarlos deacuerdo al tipo de gestion de DBMS, es dicir, pueden clasificarse segun la forma en que administran las bases de batos, sea local, remoto, escalable etc., estas de claseifican como: 
 
-         1.-Relacionales (SQL)
+         1.-Relacionales (SQL), son bases de datos que almacenan y proporcionan datos relacionados entre si, cada fina en una tabla es un registro de una ID unica llamada llave, la estructura de datos se encuentra separadas de las estructuras de almacenamiento fisico, accediendo a ellos como estructura logica, este sistema es ideal para mantener la uniformidad de los datos y garantizar que todas las instancias de una base de datos tengan los mismos datos en todo momento, garantizando, atomicidad, uniformidad, aislamiento y durabilidad.
 
-            
+         MySQL:
+            es un sitema de gestion dque se basa en SQL y en la arquitectura Cliente -servidor, teiene un uso muy amplio debido a su soporte en todas las plataformas, tambien es compatible con C, C++, Java, Perl, PHP, Python y Ruby.
 
-         2.-No relacionables (NoSQL)
+         PostgreSQL:
+            es un sisitema de gestion de base de datos empresarial, empleada por desarrolladores, administradores de aplicaciones, permite mantener la integridad de los datos y lo suficientemente fuerte para evitar errores,
+
+         MongoDB: 
+            realiza recopilacion de datos en colecciones y documentos, es un software libre de licencia publica, funciona con muchos lenguajes de programacion y en todos los sistemas operativos,emplea el formato JSON en formato de archivo Binario.
+
+         Microsoft SQL Server: 
+            Desarrollado por microsoft, presentando aplicaciones empresariales, dedicado a inteligencia empresarial y al analisis de entornos corporativos, presenta facilidad de uso, cifrado de datos consuderado como uno de los mas seguyros, 
+
+         2.-No relacionables (NoSQL), son utilixzadas cuando las BD crecen muy rapidamente, por arriba del Terabyte de información, cuando la escalabilidad sepera los mlimites viables y de costo del los DBMS del tpo relacional, cuando se presentan un elevado numero de consultas por parte de usuarios, con incersion de datos no homogenea (), distintos campos; Algunos de los DBMS NoSQL
+            Casandra:
+                empleado por Facebook, Twitter, es un DBMS de codigo abierto, pensado en la escalabilidad horizontal, en arquitecturas distribuidas y con endoque flexible, permite analizar y organizar mas rapido, datos dispares y de gran volumen, asi como la escalabilidad en la nube.
+
+            Redis:
+                empleado por Instagram, Github, flickr. se considera como un repositorio de estructuras de datos, puede ejecutar operaciones atomicas, segun el uso trabaja con conjuntos de datos en memoria, permite escalabilidad horizontal. 
+
+            MongoDB:
+                 empleado por FourSquare, CERN, SourceForge, etc, orientada a documentos, escquemas libres, se caracteriza por ser muy rapido al ejecutar operaciones y tener un codigo muy confiable.
+
+
+
 
 5.-Subir esta descripción en un archivo markdown o PDF nombrado claramente (tarea 1 o algo por el estilo).
+
+referencias:
+
+Acens. (28 de fecbrero de 2014). Bases de datos NoSQL que sopn y tipos que nos podemos enontrar. acens.com. https://www.acens.com/wp-content/images/2014/02/bbdd-nosql-wp-acens.pdf
+
+Bantu Group. (27 de abril de 2020). Sistemas de gestiín de bases de datos: tipos, alcances y funciones. bantugroup.com. https://www.bantugroup.com/blog/tipos-de-sistemas-de-gestion-de-base-de-datos#:~:text=Sistema%20Relacional%3A%20Almacena%20datos%20en,imagen%2C%20sonido%20y%20texto).
+
+Darias Pérez Sergio. (o9 de septiembre de 2021). gestores de bases de datos. intelequia.com. https://intelequia.com/blog/post/2949/gestor-de-base-de-datos-qu%C3%A9-es-funcionalidades-y-ejemplos
+
+The Apache Software Foundation. (02 de enero de 2022). Cassandra Basics. https://cassandra.apache.org/_/cassandra-basics.html.
+
+Redis.Ltd. (12 de mayo de 2022). Introduction to Redis. https://redis.io/docs/about/
+
+oracle. (29 de julio de 2022). ¿que es una base de datos relacional (sistema de gestion de bases de datos relacionales)?. https://www.oracle.com/mx/database/what-is-a-relational-database/.
+
 
 ### curso impartido por Maestro Jose Alberto Benavides
 ### Ing Juan Jesus Torres Solano
