@@ -1,8 +1,10 @@
+# Universidad Autonoma de Nuevo León
+# Facultad de Ciencias Fisico Matematicas
+# Bases de Datos Relacionables
+## Tarea 2
 
 
-Tarea 2
-
-[8 puntos] Convierte tu base de datos no estructurada en un modelo entidad-relación, representándolo con un diagrama entidad-relación. Usa nodos con figuras correctas y aristas claramente señaladas con los números correspondientes para las relaciones.
+### [8 puntos] Convierte tu base de datos no estructurada en un modelo entidad-relación, representándolo con un diagrama entidad-relación. Usa nodos con figuras correctas y aristas claramente señaladas con los números correspondientes para las relaciones.
 
 <br/><br/>
 
@@ -11,7 +13,7 @@ Tarea 2
 <br/><br/>
 
 
-[2 punto] Muestra el dominio de los atributos.
+### [2 punto] Muestra el dominio de los atributos.
 
 
 | Variable     | Tipo de Variable | Descripcion Variable    | 

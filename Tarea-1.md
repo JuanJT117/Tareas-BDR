@@ -2,15 +2,15 @@
 # Facultad de Ciencias Fisico Matematicas
 # Bases de Datos Relacionables
 ## Tarea 1
-1.- Crear una repositori publico de Github: 
+### 1.- Crear una repositori publico de Github: 
 
     Se a creado el siguiente repositorio llamado tareas, donde se subiran los codigos y avances correspondientes al curso de Bases de Datos Relacionables.:
 
         https://github.com/JuanJT117
 
-2.- Compartir el repositorio en el Teams correspondiente: 
+### 2.- Compartir el repositorio en el Teams correspondiente: 
 
-3.- Describir una base de datos y sus relaciones de manera no estructurada (puede ser un párrafo, lista, esquema…) con la que trabajar durante el semestre. Agrega el tipo de dato que supones tendrá cada uno de tus atributos.
+### 3.- Describir una base de datos y sus relaciones de manera no estructurada (puede ser un párrafo, lista, esquema…) con la que trabajar durante el semestre. Agrega el tipo de dato que supones tendrá cada uno de tus atributos.
 
 opcion 1
 
@@ -26,7 +26,7 @@ se buscara generar relaciones entre los distintos contaminantes, el crecimiento 
 
 Se empleara MySQL como DBMS para el trabajo de la materia.
 
-4.-Investigar diferentes SGBD (DBMS), elegir alguno y describirlo. Citar adecuadamente. Plagio invalida tarea.
+### 4.-Investigar diferentes SGBD (DBMS), elegir alguno y describirlo. Citar adecuadamente. Plagio invalida tarea.
 
 los Database Management System (DBMS / SGBD) son herramientas que nos permiten crear, gestinar, organizar, manipular, optenr reportes, proteger, respaldar bases de datos (entre otras aplicaciones), es comun su uso como herramienta de gestion de informacion en empresas, y paginas web, dodne se requiera trabajar con ellas y pobtener consultas especificas de las mismas.
 
@@ -63,7 +63,7 @@ MongoDB:  Empleado por FourSquare, CERN, SourceForge, etc, orientada a documento
 
 
 
-5.-Subir esta descripción en un archivo markdown o PDF nombrado claramente (tarea 1 o algo por el estilo).
+### 5.-Subir esta descripción en un archivo markdown o PDF nombrado claramente (tarea 1).
 
 referencias:
 
