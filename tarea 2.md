@@ -16,9 +16,9 @@ Tarea 2
 
 | Variable     | Tipo de Variable | Descripcion Variable    | 
 | :---        |    ----:   |          :--- |
-| **artist**     | VARCHAR      | Nombre del artista  |
-|**Song**   | VARCHAR        | Nombre de la cancion      |
-| **Duracion**   | VARCHAR       | Duracion canción en milisegundos    |
+| **Edad**     | TINYTEXT      | INTERVALO DE EDAD  |
+|**Genero**   | VARCHAR        | Valor de 1 Mujer, valor 0 para hombre      |
+| **N° de habitantes**   | VARCHAR       | numero de habitantes por año    |
 | **Explicit**   | TINYTEXT      | Clasifica si la cancion o video musical contiene una o mas referencias a contenido que puede ser considerada ofensiva o no apropiada para niños    |
 | **Year**   | VARCHAR       | Año en que fue lanzada la cancion      |
 | **Popularity**   | VARCHAR        | Valor numero en el cual entre más alto sea, mayor es su popularidad.      |
