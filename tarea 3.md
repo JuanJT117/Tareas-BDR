@@ -1,27 +1,26 @@
-1.- Esquema entidad-relacion
+# Universidad Autonoma de Nuevo León
+# Facultad de Ciencias Fisico Matematicas
+# Bases de Datos Relacionables
+## Tarea 3
 
-Contaminacion_ambiental(_id_, _id-fecha_, _id-estacion-de-monitoreo_)
+### 1.- Esquema entidad-relacion
 
-Fecha(_id_, dia, mes, año, _id-estacion-de-monitoreo_, _id-Contaminante_)
+Fecha (_id_, dia, mes, año)
 
-Contaminante(_id_, _id-estacion-de-monitoreo_, monoxido_de_carbono, dioxido_de_azufre, dioxido_de_nitrogeno, ozono, PM10, PM2-5)
+Contaminante (_id_, monoxido_de_carbono, dioxido_de_azufre, dioxido_de_nitrogeno, ozono, pm10, pm2-5)
 
-Estacion_monitoreo (_id_, latitud, longitud)
+estacion (_id_, nombre, latitud, longitud)
 
-Poblacion(_id_, _id-fecha_, edad_rango )
+Poblacion (_id_, edad, genero, n° habitantes)
 
-2.-Diagrama
+Contaminante-detectado_fecha_estacion_contaminante (_id-fecha_, _id-estacion_, _id-contaminante_)
 
-erDiagram
-    CAR ||--o{ NAMED-DRIVER : allows
-    CAR {
-        string registrationNumber
-        string make
-        string model
-    }
-    PERSON ||--o{ NAMED-DRIVER : is
-    PERSON {
-        string firstName
-        string lastName
-        int age
-    
+Contingencia_fecha_poblacion_estacion_contaminante(_id-fecha_, _id-poblacion_, _id-estacion_, _id-contaminante_)
+
+### 2.-Diagrama
+
+<br/><br/>
+
+![TAREAS-BDR](diagrama_relacional_T3.png)
+
+<br/><br/>    
