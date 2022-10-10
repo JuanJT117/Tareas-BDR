@@ -5,7 +5,7 @@
 
 ### [4 puntos] Crea tu base de datos y tablas correspondientes a partir de tus tareas de los modelos e-r y relacional
 
-'''
+
 /*
 SE ELIMINAN TABLAS DE EXISTIR COMO PRIMER PASO
 */
@@ -92,10 +92,10 @@ CREATE TABLE poblacion (
 		poblacion_id INT AUTO_INCREMENT PRIMARY KEY,
 	 fecha_id INT(11) NOT NULL, genero VARCHAR(15), edad INT(3), numero_habitantes INT
 	);
-'''
+
 
 ### [4 puntos] Incluye al menos 20 registros en tu base de datos, Sube tu archivo de creación de base de datos a tu repositorio con un nombre claro
-'''
+
 
 INSERT INTO dioxido_de_azufre (so2_id, fecha_id, hora, aco, ajm, ati, bju, cam, cca) VALUES
 (1,1,06,52,52,52,52,52,35),
@@ -251,5 +251,5 @@ INSERT INTO fecha (fecha_id, dia, mes, año) VALUES
 (17,17,'mayo',2022),
 (18,18,'junio',2022),
 (19,19,'julio',2022);
-'''
+
 ### [2 puntos] Tu archivo se ejecuta completamente y sin ningún error en su SGBD correspondiente durante la siguiente sesión en vivo
