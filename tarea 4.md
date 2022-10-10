@@ -5,68 +5,92 @@
 
 ### [4 puntos] Crea tu base de datos y tablas correspondientes a partir de tus tareas de los modelos e-r y relacional
 
-#### se elimina base de datos con mismo nombre, de existir         ####
+/*
+SE ELIMINAN TABLAS DE EXISTIR COMO PRIMER PASO
+*/
 
-drop database if exists contaminacion_ambiental_y_poblacion;
+DROP DATABASE IF EXISTS contaminacion_ambiental_y_poblacion;
+DROP TABLE IF EXISTS monoxido_de_carbono;
+DROP TABLE IF EXISTS dioxido_de_azufre;
+DROP TABLE IF EXISTS dioxido_de_nitrogeno;
+DROP TABLE IF EXISTS ozono;
 
-#### se crea la Base de datos                                      ####
-create database contaminacion_ambiental_y_poblacion;
-use contaminacion_ambiental_y_poblacion;
+/*
+SE CREAN LAS TABLAS CORRESPONDIENTES
+*/
 
-#### se crean las tablas que integraran la base de datos           ####
+CREATE DATABASE contaminacion_ambiental_y_poblacion;
+USE contaminacion_ambiental_y_poblacion;
 
-/*se modifica la tabla de contaminante por cada una del los 
+/*
+se modifica la tabla de contaminante por cada una del los 
 ademas se considerara la fecha dentro de cada toma de muestra de 
 cada contamianante asi como la estacion de la que se extrajo la
 muestra
-);*/
+*/
 
-#### se crean las tablas ####
+CREATE TABLE monoxido_de_carbono (
+		id_co INT AUTO_INCREMENT PRIMARY KEY,
+	 id_fecha INT(11) NOT NULL,
+     hora TIME,
+     aco VARCHAR(50),
+     ajm VARCHAR(50),
+     ati VARCHAR(50),
+     bju VARCHAR(50),
+     cam VARCHAR(50),
+     cca VARCHAR(50)
+	);
 
-create table monoxido_de_carbono (id_co int auto_increment primary key,
- fecha date, hora time, aco int, ajdioxido_de_azufrem int, ati int, bju int, cam int, cca int,
- cho int, cua int, cut int, fac int, far int, hgm int, inn int,
- izt int, lla int, lpr int, mer int, mgh int, mon int, mpa int,
- nez int, ped int, sac int, sag int, sfe int, sja int, tah int,
- tla int, tli int, aux int, uiz int, vif int, xal int
-);
+CREATE TABLE dioxido_de_azufre (
+		id_so2 INT AUTO_INCREMENT PRIMARY KEY,
+	 id_fecha INT(11) NOT NULL,
+     hora TIME,
+     aco VARCHAR(50),
+     ajm VARCHAR(50),
+     ati VARCHAR(50),
+     bju VARCHAR(50),
+     cam VARCHAR(50),
+     cca VARCHAR(50)
+	);
 
-create table dioxido_de_azufre (id_so2 int auto_increment primary key,
- fecha date, hora time, aco int, ajm int, ati int, bju int, cam int, cca int,
- cho int, cua int, cut int, fac int, far int, hgm int, inn int,
- izt int, lla int, lpr int, mer int, mgh int, mon int, mpa int,
- nez int, ped int, sac int, sag int, sfe int, sja int, tah int,
- tla int, tli int, aux int, uiz int, vif int, xal int
-);
+CREATE TABLE dioxido_de_nitrogeno (
+		id_no2 INT AUTO_INCREMENT PRIMARY KEY,
+	 id_fecha INT(11) NOT NULL,
+     hora TIME,
+     aco VARCHAR(50),
+     ajm VARCHAR(50),
+     ati VARCHAR(50),
+     bju VARCHAR(50),
+     cam VARCHAR(50),
+     cca VARCHAR(50)
+	);
 
-create table dioxido_de_nitrogeno (id_no2 int auto_increment primary key,
- fecha date, hora time, aco int, ajm int, ati int, bju int, cam int, cca int,
- cho int, cua int, cut int, fac int, far int, hgm int, inn int,
- izt int, lla int, lpr int, mer int, mgh int, mon int, mpa int,
- nez int, ped int, sac int, sag int, sfe int, sja int, tah int,
- tla int, tli int, aux int, uiz int, vif int, xal int
-);
+CREATE TABLE ozono (
+		id_o3 INT AUTO_INCREMENT PRIMARY KEY,
+	 id_fecha INT(11) NOT NULL,
+     hora TIME,
+     aco VARCHAR(50),
+     ajm VARCHAR(50),
+     ati VARCHAR(50),
+     bju VARCHAR(50),
+     cam VARCHAR(50),
+     cca VARCHAR(50)
+	);
 
-create table ozono (id_o3 int auto_increment primary key,
- fecha date, hora time, aco int, ajm int, ati int, bju int, cam int, cca int,
- cho int, cua int, cut int, fac int, far int, hgm int, inn int,
- izt int, lla int, lpr int, mer int, mgh int, mon int, mpa int,
- nez int, ped int, sac int, sag int, sfe int, sja int, tah int,
- tla int, tli int, aux int, uiz int, vif int, xal int
-);
+CREATE TABLE fecha (
+		id_fecha INT AUTO_INCREMENT PRIMARY KEY,
+	 dia INT, mes VARCHAR(15), año YEAR(4)
+	);
 
-create table fecha (id_fecha int auto_increment primary key,
- dia int, mes varchar(15), año year(4)
-);
+CREATE TABLE estacion (
+		id_estacion INT AUTO_INCREMENT PRIMARY KEY,
+	 nombre VARCHAR(50), latitud FLOAT(6,2), longitud FLOAT(6,2)
+	);
 
-create table estacion (id_estacion int auto_increment primary key,
- nombre varchar(50), latitud float(6,2), longitud float(6,2)
-);
-
-create table poblacion (id_poblacion int auto_increment primary key,
- fecha date, genero varchar(15), edad int(3), numero_habitantes int
-);
- 
+CREATE TABLE poblacion (
+		id_poblacion INT AUTO_INCREMENT PRIMARY KEY,
+	 id_fecha INT(11) NOT NULL, genero VARCHAR(15), edad INT(3), numero_habitantes INT
+	);
 
 ### [4 puntos] Incluye al menos 20 registros en tu base de datos, Sube tu archivo de creación de base de datos a tu repositorio con un nombre claro
 
