@@ -21,15 +21,22 @@ debido a que problemas con la base de datos, se empleara una base de datos de ej
 
         /* se calcula el precio maximo y minimo de los libros en venta*/
 
-        SELECT MAX(precio) FROM libros;
-                /* resultando en 850.00*/
-        SELECT MIN(precio) FROM libros
-                /* resultando en 15.00 */
+        SELECT nombre,MAX(precio),MIN(precio)
+        FROM libros l
+        INNER JOIN editorial e
+        ON l.codigoeditorial=e.codigo_editorial
 
 ##### [4 puntos] cuantil cuyo resultado sea distinto a la mediana
 
+
+
+
 ##### [4 puntos] moda
 
+        SELECT MAX(cantidad)
+        FROM libros l
+        INNER JOIN editorial e
+        on l.codigoeditorial=e.codigo_editorial;
 
 ##### [2 puntos] reporta hallazgos, dificultades, implementación de soluciones encontradas en línea, etc...
 
