@@ -21,6 +21,6 @@ Contingencia_fecha_poblacion_estacion_contaminante(_id-fecha_, _id-poblacion_, _
 
 <br/><br/>
 
-![TAREAS-BDR](diagrama_relacional_T3.png)
+![TAREAS-BDR](BD-RAMA-diagramaentdad relacion.png)
 
 <br/><br/>    
