@@ -62,3 +62,23 @@ AS
 SELECT COUNT(id_estacion), valor FROM co GROUP BY valor;
 
 SELECT * FROM valores_altos_de_monoxido_de_carbono;
+
+-- 2.- ** CREAR UN DISPARADOR (TRIGGER) DE INCERCION, ACTUALIZACION O ELIMINACION, en este caso, en caso de agregar un valor por debajo de 0.0001 nos mostrara un error personalizado sobre la condicion que establecemos
+
+DROP TRIGGER falla_estacion;
+
+DELIMITER //
+CREATE TRIGGER falla_estacion
+AFTER UPDATE ON co
+FOR EACH ROW 
+BEGIN
+	IF NEW.valor < 0.001 THEN
+		SIGNAL SQLSTATE 'HY000'
+        SET MESSAGE_TEXT='ESTACION FUERA DE FUNCIONAMIENTO';
+    END IF;
+END //
+DELIMITER ;
+
+UPDATE co
+set valor=.00001
+WHERE id_co <=3;
