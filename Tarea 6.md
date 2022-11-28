@@ -85,3 +85,7 @@ DELIMITER ;
 UPDATE co
 set valor=.00001
 WHERE id_co <=3;
+
+## 2.- ** CREA UN VIDEO EXPLICANDO LA TAREA
+
+URL= https://youtu.be/xgn55kTApgk
